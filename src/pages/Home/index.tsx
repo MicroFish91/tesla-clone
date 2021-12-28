@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { v4 as uuidv4 } from "uuid";
+import Header from "../../components/Header";
 import Section from "../../components/Section";
 import { SECTIONS } from "./sections";
 
@@ -9,6 +10,7 @@ interface HomeProps {}
 const Home: React.FC<HomeProps> = () => {
   return (
     <Container>
+      <Header />
       {SECTIONS.map((section) => (
         <Section
           key={uuidv4()}
