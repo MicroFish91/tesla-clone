@@ -46,6 +46,10 @@ export const ButtonLeft = styled.div`
   cursor: pointer;
   opacity: 0.9;
   margin: 0px 20px;
+
+  @media (max-width: 768px) {
+    margin: 10px 20px;
+  }
 `;
 
 export const ButtonRight = styled(ButtonLeft)`
