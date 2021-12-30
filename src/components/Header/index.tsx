@@ -126,6 +126,8 @@ export const BurgerSidebar = styled.div`
   transform: ${(props: BurgerSidebarProps) =>
     props.show ? "translateX(0)" : "translateX(100%)"};
 
+  transition: transform 0.2s;
+
   list-style: none;
 
   li {
